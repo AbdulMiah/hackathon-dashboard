@@ -109,7 +109,7 @@ function App() {
     }, [bagsData]);
 
     return (
-        <div className="App vh-100" style={{background: '#E9E9E9'}}>
+        <div className="App vh-100" style={{ background: "#E9E9E9" }}>
             <div className="container py-5">
                 {/* Row 1: Main Heading */}
                 <h1>Newport Green Scheme</h1>
@@ -119,13 +119,18 @@ function App() {
                     <div className="col-md-8 d-flex flex-column">
                         {/* Row 3: First Row */}
                         <div className="row bg-light m-2 rounded flex-grow-1">
-                            <div className="left-side col h-100">
-                                <h4>Single Use Plastic Bottles Saved</h4>
-                                <h3>{bottlesCount}</h3>
-                                <h5>Bottles this month</h5>
-                                <h5><b className="text-success">↓ 11%</b> Decrease from last month</h5>
+                            <div className="left-side col d-flex flex-column py-5 h-100">
+                                <h4 className="col">
+                                    Single Use Plastic Bottles Saved
+                                </h4>
+                                <h3 className="col">{bottlesCount}</h3>
+                                <h5 className="col">Bottles this month</h5>
+                                <h5 className="col">
+                                    <b className="text-success">↓ 11%</b>{" "}
+                                    Decrease from last month
+                                </h5>
                             </div>
-                            <div className="col-1 d-flex align-items-center">
+                            <div className="col-1 d-flex align-items-center justify-content-center">
                                 <div className="bg-dark h-75 text-dark">.</div>
                             </div>
                             <div className="right-side col h-100">
@@ -136,14 +141,21 @@ function App() {
                         </div>
                         {/* Row 4: Second Row */}
                         <div className="row bg-light m-2 rounded flex-grow-1">
-                            <div className="left-side col h-100">
-                                <h4>Single Use Plastic Bags Saved</h4>
-                                <h3>{bagsCount}</h3>
-                                <h5>Bags this month</h5>
-                                <h5><b className="text-success">↓ 2%</b> Decrease from last month</h5>
+                            <div className="left-side col d-flex flex-column py-5 h-100">
+                                <h4 className="col">
+                                    Single Use Plastic Bags Saved
+                                </h4>
+                                <h3 className="col">{bagsCount}</h3>
+                                <h5 className="col">Bags this month</h5>
+                                <h5 className="col">
+                                    <b className="text-success">↓ 2%</b>{" "}
+                                    Decrease from last month
+                                </h5>
                             </div>
-                            <div className="col-1 d-flex align-items-center">
-                                <div className="bg-dark mx-1 h-75 text-dark">.</div>
+                            <div className="col-1 d-flex align-items-center justify-content-center">
+                                <div className="bg-dark mx-1 h-75 text-dark">
+                                    .
+                                </div>
                             </div>
                             {/*vertical hr*/}
                             <div className="right-side col h-100">
@@ -155,7 +167,6 @@ function App() {
                     </div>
                     {/* Right Column: Plastics Saved */}
                     <div className="col-md-4">
-
                         <div className="row bg-light m-2 rounded h-100">
                             <div className="left-side col h-100">
                                 <div className="d-flex justify-content-between align-items-end w-100">
@@ -164,54 +175,77 @@ function App() {
                                 </div>
 
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Plastic Bottles</b></p>
+                                    <p>
+                                        <b>Plastic Bottles</b>
+                                    </p>
                                     <p>{bottlesCount}</p>
-                                    <p className="text-success"><b>↓ 2%</b></p>
+                                    <p className="text-success">
+                                        <b>↓ 2%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Plastic Bags</b></p>
+                                    <p>
+                                        <b>Plastic Bags</b>
+                                    </p>
                                     <p>{bagsCount}</p>
-                                    <p className="text-danger"><b>↑ 1%</b></p>
+                                    <p className="text-danger">
+                                        <b>↑ 1%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Plastic Containers</b></p>
+                                    <p>
+                                        <b>Plastic Containers</b>
+                                    </p>
                                     <p>{containersCount}</p>
-                                    <p className="text-danger"><b>↑ 1.75%</b></p>
+                                    <p className="text-danger">
+                                        <b>↑ 1.75%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Cigarettes</b></p>
+                                    <p>
+                                        <b>Cigarettes</b>
+                                    </p>
                                     <p>{cigarettesCount}</p>
-                                    <p className="text-danger"><b>↓ 3%</b></p>
+                                    <p className="text-danger">
+                                        <b>↓ 3%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Plastic Straws</b></p>
+                                    <p>
+                                        <b>Plastic Straws</b>
+                                    </p>
                                     <p>{strawsCount}</p>
-                                    <p className="text-danger"><b>↓ 0.2%</b></p>
+                                    <p className="text-danger">
+                                        <b>↓ 0.2%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Plastic Wrappers</b></p>
+                                    <p>
+                                        <b>Plastic Wrappers</b>
+                                    </p>
                                     <p>{wrappersCount}</p>
-                                    <p className="text-danger"><b>↓ 1.4%</b></p>
+                                    <p className="text-danger">
+                                        <b>↓ 1.4%</b>
+                                    </p>
                                 </div>
-                                <hr className="w-100"/>
+                                <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p><b>Wet Wipes</b></p>
+                                    <p>
+                                        <b>Wet Wipes</b>
+                                    </p>
                                     <p>{wipesCount}</p>
-                                    <p className="text-danger"><b>↓ 4.6%</b></p>
+                                    <p className="text-danger">
+                                        <b>↓ 4.6%</b>
+                                    </p>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div className="d-flex my-3">
@@ -227,13 +261,13 @@ function App() {
                         <div className="d-flex flex-column">
                             <h4>15</h4>
                             <h5>Jun</h5>
+                            </div>
+                            <h4 className="w-75">
+                                Festival of Sustainable Business Exhibition
+                            </h4>
                         </div>
-                            <h4 className="w-75">Festival of Sustainable Business Exhibition</h4>
-                        </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     );
