@@ -209,7 +209,7 @@ function App() {
                                         <b>Cigarettes</b>
                                     </p>
                                     <p className="col-4">{cigarettesCount}</p>
-                                    <p className="col-4 text-danger">
+                                    <p className="col-4 text-success">
                                         <b>↓ 3%</b>
                                     </p>
                                 </div>
@@ -219,7 +219,7 @@ function App() {
                                         <b>Plastic Straws</b>
                                     </p>
                                     <p className="col-4">{strawsCount}</p>
-                                    <p className="col-4 text-danger">
+                                    <p className="col-4 text-success">
                                         <b>↓ 0.2%</b>
                                     </p>
                                 </div>
@@ -229,7 +229,7 @@ function App() {
                                         <b>Plastic Wrappers</b>
                                     </p>
                                     <p className="col-4">{wrappersCount}</p>
-                                    <p className="col-4 text-danger">
+                                    <p className="col-4 text-success">
                                         <b>↓ 1.4%</b>
                                     </p>
                                 </div>
@@ -239,7 +239,7 @@ function App() {
                                         <b>Wet Wipes</b>
                                     </p>
                                     <p className="col-4">{wipesCount}</p>
-                                    <p className="col-4 text-danger">
+                                    <p className="col-4 text-success">
                                         <b>↓ 4.6%</b>
                                     </p>
                                 </div>
