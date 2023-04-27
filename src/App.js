@@ -256,15 +256,34 @@ function App() {
 
                     {/*Bottom right row*/}
                     <div className="p-2 rounded w-100 bg-light">
-                        <h4>Upcoming Events</h4>
-                        <div className="d-flex justify-center px-5">
-                        <div className="d-flex flex-column">
-                            <h4>15</h4>
-                            <h5>Jun</h5>
+                        <h3 className="text-center p-3">
+                            <b>Upcoming Events</b>
+                        </h3>
+                        <div className="d-flex justify-content-center px-5">
+                            <div className="d-flex col-2 flex-column align-items-center">
+                                <h4>29 Apr</h4>
                             </div>
-                            <h4 className="w-75">
-                                Festival of Sustainable Business Exhibition
-                            </h4>
+                            <div className="col-1 d-flex align-items-center justify-content-center">
+                                <div className="bg-dark h-75 text-dark">.</div>
+                            </div>
+                            <div className="d-flex flex-column align-items-center">
+                                <h4>
+                                    Monthly Sustainable Pop-Up Market
+                                </h4>
+                            </div>
+                        </div>
+                        <div className="d-flex justify-content-center px-5 p-3">
+                            <div className="d-flex col-2 flex-column align-items-center">
+                                <h4>15 Jun</h4>
+                            </div>
+                            <div className="col-1 d-flex align-items-center justify-content-center">
+                                <div className="bg-dark h-75 text-dark">.</div>
+                            </div>
+                            <div className="d-flex flex-column align-items-center">
+                                <h4>
+                                    Festival of Sustainable Business Exhibition
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
