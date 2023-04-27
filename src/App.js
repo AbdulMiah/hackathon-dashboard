@@ -109,7 +109,7 @@ function App() {
     }, [bagsData]);
 
     return (
-        <div className="App vh-100" style={{ background: "#E9E9E9" }}>
+        <div className="App h-100" style={{ background: "#E9E9E9" }}>
             <div className="container py-5">
                 {/* Row 1: Main Heading */}
                 <h1>Newport Green Scheme</h1>
@@ -169,77 +169,77 @@ function App() {
                     <div className="col-md-4">
                         <div className="row bg-light m-2 rounded h-100">
                             <div className="left-side col h-100">
-                                <div className="d-flex justify-content-between align-items-end w-100">
-                                    <h2>Plastics Saved</h2>
+                                <div className="d-flex justify-content-between align-items-end w-100 p-3">
+                                    <h4>Plastics Saved</h4>
                                     <h5>This Month</h5>
                                 </div>
 
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Plastic Bottles</b>
                                     </p>
-                                    <p>{bottlesCount}</p>
-                                    <p className="text-success">
+                                    <p className="col-4">{bottlesCount}</p>
+                                    <p className="col-4 text-success">
                                         <b>↓ 2%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Plastic Bags</b>
                                     </p>
-                                    <p>{bagsCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{bagsCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↑ 1%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Plastic Containers</b>
                                     </p>
-                                    <p>{containersCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{containersCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↑ 1.75%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Cigarettes</b>
                                     </p>
-                                    <p>{cigarettesCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{cigarettesCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↓ 3%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Plastic Straws</b>
                                     </p>
-                                    <p>{strawsCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{strawsCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↓ 0.2%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Plastic Wrappers</b>
                                     </p>
-                                    <p>{wrappersCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{wrappersCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↓ 1.4%</b>
                                     </p>
                                 </div>
                                 <hr className="w-100" />
                                 <div className="d-flex justify-content-between">
-                                    <p>
+                                    <p className="col-4">
                                         <b>Wet Wipes</b>
                                     </p>
-                                    <p>{wipesCount}</p>
-                                    <p className="text-danger">
+                                    <p className="col-4">{wipesCount}</p>
+                                    <p className="col-4 text-danger">
                                         <b>↓ 4.6%</b>
                                     </p>
                                 </div>
@@ -249,9 +249,13 @@ function App() {
                 </div>
 
                 <div className="d-flex my-3">
-                    <div className="mx-2 p-2 w-100 rounded bg-light">
-                        <h4>Ways to reduce single user plastic waste</h4>
-                        <h2>Carry and refill a reusable bottle</h2>
+                    <div className="d-flex flex-column mx-2 p-2 w-100 rounded bg-light align-items-center justify-content-center">
+                        <h3 className="col p-3">
+                            <b>Ways to reduce single user plastic waste</b>
+                        </h3>
+                        <h3 className="col">
+                            Carry and refill a reusable bottle
+                        </h3>
                     </div>
 
                     {/*Bottom right row*/}
@@ -267,9 +271,7 @@ function App() {
                                 <div className="bg-dark h-75 text-dark">.</div>
                             </div>
                             <div className="d-flex flex-column align-items-center">
-                                <h4>
-                                    Monthly Sustainable Pop-Up Market
-                                </h4>
+                                <h4>Monthly Sustainable Pop-Up Market</h4>
                             </div>
                         </div>
                         <div className="d-flex justify-content-center px-5 p-3">
